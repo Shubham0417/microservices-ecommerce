@@ -3,13 +3,29 @@
     {
       "DownstreamPathTemplate": "/api/auth/{everything}",
       "DownstreamHostAndPorts": [
-        { "Host": "localhost", "Port": 5001 }
+        { "Host": "auth-service", "Port": 8080 }
       ],
       "UpstreamPathTemplate": "/auth/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/products/{everything}",
+      "DownstreamHostAndPorts": [
+        { "Host": "product-service", "Port": 8080 }
+      ],
+      "UpstreamPathTemplate": "/products/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/orders/{everything}",
+      "DownstreamHostAndPorts": [
+        { "Host": "order-service", "Port": 8080 }
+      ],
+      "UpstreamPathTemplate": "/orders/{everything}",
       "UpstreamHttpMethod": [ "GET", "POST" ]
     }
   ],
   "GlobalConfiguration": {
-    "BaseUrl": "http://localhost:5000"
+    "BaseUrl": "http://localhost:6000"
   }
 }

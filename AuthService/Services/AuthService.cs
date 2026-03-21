@@ -8,12 +8,12 @@ using System.Text;
 
 namespace AuthService.Services;
 
-public class AuthService
+public class AuthServiceHandler
 {
     private readonly AppDbContext _context;
     private readonly IConfiguration _config;
 
-    public AuthService(AppDbContext context, IConfiguration config)
+    public AuthServiceHandler(AppDbContext context, IConfiguration config)
     {
         _context = context;
         _config = config;
