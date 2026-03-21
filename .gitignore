@@ -1,0 +1,71 @@
+
+ABHINAV MOHAN BHATIA
+1:30 PM (30 minutes ago)
+to me
+
+# ========================
+# .NET Core / ASP.NET
+# ========================
+
+bin/
+obj/
+*.user
+*.rsuser
+*.suo
+*.userprefs
+
+# Build results
+Debug/
+Release/
+
+# Rider / VS Code / Visual Studio
+.vscode/
+.idea/
+.vs/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# ========================
+# Environment / Secrets
+# ========================
+
+.env
+appsettings.Development.json
+appsettings.Local.json
+
+# (IMPORTANT) if you later move secrets here
+# appsettings.json   <-- DO NOT ignore yet (you are using JWT key here)
+
+# ========================
+# Docker / Podman
+# ========================
+
+# Ignore local volumes / temp files if any
+docker-data/
+*.pid
+
+# ========================
+# NuGet
+# ========================
+
+*.nupkg
+packages/
+
+# ========================
+# Test / coverage
+# ========================
+
+TestResults/
+coverage/
+
+# ========================
+# Misc
+# ========================
+
+*.swp
+*.tmp
