@@ -31,6 +31,23 @@ Each service:
 
 ## 🧱 Architecture
 
+```
+    Client (Postman / Frontend)
+              |
+              v
+       +----------------+
+       |  API Gateway   |
+       +----------------+
+        /      |       \
+       v       v        v
++---------+ +---------+ +---------+
+|  Auth   | | Product | |  Order  |
+| Service | | Service | | Service |
++---------+ +---------+ +---------+
+     |           |           |
+     v           v           v
+ Auth DB     Product DB   Order DB
+```
 
 ---
 
